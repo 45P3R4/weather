@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+</head>
+<header>
+    <div class="container">
+        <div class="location">
+            <img src="./img/location.png" alt="" class="location-icon">
+            <span class="location-name">Воронеж</span>
+        </div>
+        <div class="menu">
+            <button>Меню</button>
+        </div>
+    </div>
+    
+</header>
+<body id="root">
+    <div class="main-container">
+        <div class="card">
+            <div class="main-slot">
+                <img id="weather-icon"></img>
+                <h1 id="weather-description">Ясно</h1>
+            </div>
+            <br>
+            <div class="slots">
+                <h2>Температура</h2>
+                <div id="weather-temp">Температура</div>
+                <div id="weather-feels">Ощущается как</div>
+            </div>
+            <div class="slots">
+                <h2>Ветер</h2>
+                <div id="weather-wind-speed">Ветер метров в секунду</div>
+                <div id="weather-wind-deg">Ветер градусов</div>
+            </div>
+            <div class="slots">
+                <h2>Давление и влажность</h2>
+                <div id="weather-pressure">Давление</div>
+                <div id="weather-humidity">Влажность</div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<footer>
+    github.com 45P3R4
+</footer>
+</html>
