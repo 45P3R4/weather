@@ -9,13 +9,12 @@ window.onload = function () {
     
     const requestOptions = {
       method: "GET",
-      redirect: "follow",
-      origin: "https://45p3r4.github.io"
+      redirect: "follow"
     };
 
-    console.log(document.cookie);
-    document.cookie="domain=.yandex.ru; Secure; SameSite=None; Partitioned;";
-    console.log(document.cookie);
+    if (!navigator.cookieEnabled) {
+      alert("cookies disabled");
+    }
 
     document.getElementById("location-name")
     .textContent = userLocation;
