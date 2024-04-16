@@ -9,10 +9,9 @@ window.onload = function () {
     
     const requestOptions = {
       method: "GET",
-      redirect: "follow"
+      redirect: "follow",
+      credentials: "same-origin"
     };
-
-    document.cookie="__Host-name=value; Secure; Path=/; SameSite=None; Partitioned;";
 
     document.getElementById("location-name")
     .textContent = userLocation;
