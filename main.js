@@ -12,6 +12,8 @@ window.onload = function () {
       redirect: "follow"
     };
 
+    document.cookie="__Host-name=value; Secure; Path=/; SameSite=None; Partitioned;";
+
     document.getElementById("location-name")
     .textContent = userLocation;
 
