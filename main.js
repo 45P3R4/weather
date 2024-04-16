@@ -1,7 +1,6 @@
 window.onload = function () {
 
   async function getData(url = "") {
-    const geo = ymaps.geolocation;
     let userLocation = ymaps.geolocation.city;
     const appid = "appid=85d298a42fe8487992bc681eaec51e81";
     const lang = "lang=ru";
@@ -11,10 +10,6 @@ window.onload = function () {
       method: "GET",
       redirect: "follow"
     };
-
-    if (!navigator.cookieEnabled) {
-      alert("cookies disabled");
-    }
 
     document.getElementById("location-name")
     .textContent = userLocation;
