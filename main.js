@@ -13,7 +13,9 @@ window.onload = function () {
       origin: "https://45p3r4.github.io"
     };
 
-    document.cookie="__Host-name=45p3r4.github.io; Secure; Path=/weather; SameSite=None; Partitioned;";
+    console.log(document.cookie);
+    document.cookie="domain=.yandex.ru; Secure; SameSite=None; Partitioned;";
+    console.log(document.cookie);
 
     document.getElementById("location-name")
     .textContent = userLocation;
