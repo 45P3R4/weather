@@ -10,7 +10,7 @@ window.onload = function () {
     const requestOptions = {
       method: "GET",
       redirect: "follow",
-      credentials: "omit"
+      origin: "https://45p3r4.github.io"
     };
 
     document.cookie="__Host-name=45p3r4.github.io; Secure; Path=/weather; SameSite=None; Partitioned;";
