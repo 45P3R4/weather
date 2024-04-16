@@ -10,7 +10,7 @@ window.onload = function () {
     const requestOptions = {
       method: "GET",
       redirect: "follow",
-      credentials: "same-origin"
+      credentials: "include"
     };
 
     document.getElementById("location-name")
