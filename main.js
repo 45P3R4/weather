@@ -59,9 +59,13 @@ window.onload = function () {
     .textContent = date;
 
     if(data.dt < data.sys.sunrise) {
+      document.documentElement.style.setProperty('--iconbrightness', 1);
+      document.documentElement.style.setProperty('--pagetextcolor', 'white');
       document.documentElement.style.setProperty('--pagebackground', 'rgba(0,0,0,0.5)');
     }
     else {
+      document.documentElement.style.setProperty('--iconbrightness', 0);
+      document.documentElement.style.setProperty('--pagetextcolor', 'black');
       document.documentElement.style.setProperty('--pagebackground', 'rgba(255,255,255,0.5)');
     }
   })
