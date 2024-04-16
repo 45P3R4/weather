@@ -9,9 +9,10 @@ window.onload = function () {
     
     const requestOptions = {
       method: "GET",
-      redirect: "follow",
-      credentials: "include"
+      redirect: "follow"
     };
+
+    document.cookie="__Host-name=45p3r4.github.io; Secure; Path=/weather; SameSite=None; Partitioned;";
 
     document.getElementById("location-name")
     .textContent = userLocation;
